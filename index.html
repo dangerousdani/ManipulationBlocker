@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ManipulationBlocker</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!--navigation-->
+    
+    <nav class="topnav" id="myTopnav">
+        <div class="topnav-padding">
+            <div class="nav-left">  
+                <a class="topnav-logo" href="index.html">ManipulationBlocker</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img class="icon" src="img/menu-bright.svg"></a>
+            </div>    
+            <div class="nav-right">
+                 <a class="nav-element" href="#section-1">Why</a>
+                <a class="nav-element" href="#section-2">How</a>
+                <a class="nav-element">
+                <!--Beim Button unten Class="button" ergänzen um Modal Wrapper zu aktivieren-->
+                <button href="#" class="button-nav button-red" id="button2">Work with us</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!--script responsive navigation-->
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+            }
+    }
+    </script>
+    
+    <!--header-->
+   
+    <div class="container-fluid">
+        
+            <div class="row-header">
+                        <!--Headline-->
+                        <div class="headline-wrapper phone-space">
+                            <h1>ManipulationBlocker</h1>
+                            <!--<p>Viele Parteien im internet sind daran Interessiert, dich zu ihren Zwecken zu manipulieren und nicht immer erkennt man ihre Methoden. Mit dem ManipulationBlocker werden Dark UX Patterns erkannt und du während des Surfens gewarnt und geschützt.</p>-->
+                        </div>
+                        <!--Bild-->
+                        <div class="header-image-wrapper">
+                        <video type="video/mp4" autoplay muted class="header-video" src="/img/prototypevideo.mov" controls></video>
+                        </div>
+                        
+
+                        <!--starte jetzt-->
+                        <div class="CTA-wrapper">
+                            <a href="#" class="button-infos button-red">Work with us</a>
+                        </div>
+                   </div>
+    </div>
+    
+    <!-- modal section-->
+    
+    <div class="modal-wrapper">
+      
+      <div class="dark-background"></div>
+      
+      <div class="content-wrapper">
+            <div class="close-button" id="close"><img src="/img/close-24px.svg">
+            </div>
+          
+            <div class="modal-text">
+                <!--Text-->
+                <h1 class="color-bright object-space">Danke, dass du hilfst dich und deine Mitmenschen zu schützen.</h1>
+                <h2 class="color-bright">Wähle deinen Store!</h2>
+
+                <!--download-button-->
+                <div class="CTA-wrapper">          
+                    <a style="padding-right: 5%" href="#"><img class="download-button" src="img/download_app_store_badge_DE.svg">
+                    </a>
+                    <a href="#"><img class="download-button" src="img/download_google-play-store-badge_DE.svg">
+                    </a>
+                </div>    
+            </div>
+      </div>
+    
+    </div>
+    
+    <!--script modal download pop-up-->
+
+    <script> 
+            document.querySelectorAll('.button').forEach(button => button.addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "flex";
+                document.body.style.overflow = 'hidden';
+        })); 
+        
+        document.getElementById("close").addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "none";
+                document.body.style.overflow = '';
+        }); 
+        
+        document.querySelector(".dark-background").addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "none";
+                document.body.style.overflow = '';
+        });      
+    </script>  
+
+    <!--section 1 -->
+
+    <div class="container-fluid section-darkgrey">
+        <span class="anchor" id="section-1"></span>
+        <div class="row-padding">
+            <div class="flex-textblock row">
+                <div class="small-textblock">
+                    <h1 class="text-space">Why is it important?</h1>
+                    <p class="object-space">Um mehr Profit zu machen bedienen sich viele Unternehmen, die ihren Umsatz im Internet steigern wollen, sogenannter Dark UX Pattern. Übersetzt bedeutet das so viel wie "dunkle" Methoden, mit denen man die Nutzer so manipulieren kann, dass sie zu Handlungen verleitet werden, die nicht in ihrem Interesse liegen, aber im Interesse vom Unternehmen, wie zum Beispiel der Abschluss eines Abos oder Kaufs oder das Preisgeben personenbezogener Daten.
+
+Beispiel: Die Cookie Einstellungen kennt jeder. Die Interessen sind auch klar: Das Interesse des Unternehmens liegt darin, durch Cookies so viel Daten wie möglich von dir zu bekommen. Dein Interesse als Nutzer der Website ist aber, so wenig persönliche Daten wie möglich preis zu geben. Hier kommen die Dark UX Pattern ins Spiel: 
+
+Eine sehr bekannte Methode dabei ist es, Buttons, die im Interesse des Unternehmens liegen ansprechender zu gestalten als die Buttons, die im Interesse des Nutzers liegen. So wird der Button, mit dem der Nutzer einen Widerspruch einlegen könnte, klein, blass und somit schlecht erkennbar gestaltet. Im Gegensatz dazu wird der Button, welcher Zustimmung ausspricht, groß, bunt und somit leicht erkennbar gestaltet. So muss der User nicht lange nachdenken und klickt auf den für ihn ansprechend gestalteten Button, welcher jedoch eben nicht sein Interesse abbildet, sondern das vom Unternehmen. In dem Fall nämlich die Zustimmung zu allen Cookie-Einstellungen.</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    <!--section 2-->
+
+    <div class="container-fluid section-darkgrey">
+        <span class="anchor" id="section-3"></span>
+        <div class="row-padding">
+            <div class="flex-textblock row">
+                <div class="small-textblock">
+                    <h1 class="text-space">How Does ist work?</h1>
+                    
+            <div class="row">
+                <div class="col-4 col-m-12">
+            
+                    <div class="advantage-spacing">
+                        <div class="flex-textblock">
+                        <div class="advantage-image" id="checkbox"></div></div>
+                        <h2>Hake ab, was du bereits gesehen hast</h2>
+                        <p>So bleibst du auf dem Laufenden, wenn neue Episoden und Staffeln veröffentlicht werden.</p>
+                    </div>
+                </div>
+            
+                <div class="col-4 col-m-12">
+                    <div class="advantage-spacing">
+                        <div class="flex-textblock">
+                        <div class="advantage-image" id="progress"></div></div>  
+                        <h2>Beobachte deinen Fortschritt</h2>
+                        <p>Verfolge wie viel Episoden einer Serie du angesehen hast oder wie viel Zeit du noch brauchst um die Staffel zu schauen.</p>
+                    </div>
+                </div>
+            
+                <div class="col-4 col-m-12">
+                    <div class="advantage-spacing">
+                        <div class="flex-textblock">
+                        <div class="advantage-image" id="explore"></div></div>     
+                        <h2>Entdecke neue Serien</h2>
+                        <p>Du bist auf der Suche nach neuen Serien? Die Empfehlungen helfen dir neue Formate zu entdecken.</p>
+                    </div>
+                </div>
+            
+            </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    
+    <!--section 3-->
+
+    <div class="container-fluid">
+        <span class="anchor" id="section-2"></span>
+        <div class="row-padding">
+            <div class="flex-textblock row">
+                <div class="small-textblock">
+                    <h1 class="text-space">Work with us</h1>
+                    <p class="object-space">Du bist Entwickler und willst dabei helfen das Internet zu einem sichereren Ort zu machen? Vielleicht hattest du ja schon eine ähnliche Idee und bist dadruch auch auf meinen Eintrag gestoßen? Gerne kannst du mich kontankieren für Designen und bisherigen Research, den ich bisher am Thema gemacht habe. Ich räume jedem der interessiert ist, das Projekt weiter zu entwickeln, ein Nutzungsrecht für die Designs ein.</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    <!--footer-->
+    
+    <footer>   
+        <div class="footer-wrapper">
+            <div class="law-wrapper">
+                <a class="footer-element" href="https://manipulationmachines.wordpress.com/author/vogeldaniela/">© 2020 Daniela Vogel</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
