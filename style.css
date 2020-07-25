@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--darkgrey);
-    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    font-family: 'Hind Madurai', sans-serif;
     font-size: 18px; 
     text-align: center;
     margin: 0;
@@ -21,6 +21,15 @@ body {
     min-width: 320px;
     color: white;
 }
+
+.opacity {
+    opacity: 50%;
+}
+
+.opacity:hover {
+    opacity: 100%;
+}
+
 
 /* typography and spacing */
 
@@ -288,7 +297,6 @@ button {
     width: 60%;
     position: absolute;
     background-color: var(--red);
-    border-radius: 1em;  
     text-align: left;
     padding: 5%;
 }
@@ -301,9 +309,14 @@ button {
 
 /* End of modal download pop up*/ 
 
-.col-4{flex:0 0 33.333333%;max-width:33.333333%;align-items:center;justify-content:center;align-items:center}
-
-.col-m-12{flex:0 0 100%;max-width:100%}
+.col-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
 
 .advantage-spacing {
     margin: 0 1em;
@@ -313,14 +326,9 @@ button {
 }
 
 
-
 .advantage-image {
-    width: 250px; 
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -khtml-border-radius: 50%;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
-    border-radius: 50%;
+    width: 200px; 
+    height: 200px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -530,6 +538,11 @@ footer {
         display: flex; 
         flex-direction: column;
     }
+    
+    .col-m-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 }
 
 /* Die ganze Seite verwandelt sich unter 768 pixel in Hochformat*/
@@ -602,7 +615,7 @@ footer {
    .row-padding {
         width: 80%;
         max-width: 1280px; 
-        padding: 6% 0;
+
         justify-content:center;
         align-items:center
     }  
