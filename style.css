@@ -77,8 +77,8 @@ body {
 
 .opacity {
     opacity: 50%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(5px);
+    transition: filter 0.5s;
 }
 
 .opacity:hover {
@@ -110,6 +110,10 @@ p {
 
 .object-space{
     margin: 0 0 1em 0;
+}
+
+.object-space-XL{
+    margin: 0 0 5em 0;
 }
 
 .phone-space{
