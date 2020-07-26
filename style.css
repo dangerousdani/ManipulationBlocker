@@ -59,7 +59,7 @@ body {
     }
 }
 
-#animated-nav {
+.animated-nav {
     -webkit-animation-name: navappearance;
     -webkit-animation-duration:  1s;
     -webkit-animation-fill-mode: forwards;
@@ -204,6 +204,7 @@ p {
 
 .container-fluid {
     width: 100%;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -601,7 +602,7 @@ footer {
     
     .topnav.responsive {
         align-items: center;
-        height: 320px;
+        height: 288px;
     }
     
     .topnav.responsive .topnav-padding {
