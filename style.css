@@ -331,12 +331,30 @@ button {
 
 .button-blue {
     background: var(--brightblue); 
+    font-weight: bold;
     color: white; 
+    transition-duration: 0.4s;
 }
 
 .button-blue:hover {
-    background: var(--red);
+    background: white;
+    color: var(--brightblue); 
     cursor: pointer;
+    outline-color: white; 
+}
+
+.button-blue-outline {
+    padding: 9px 25px;
+    background: none;
+    font-weight: bold;
+    border: 3px solid var(--brightblue);
+    color: #3530FB;
+    transition-duration: 0.4s;
+}
+
+.button-blue-outline:hover {
+    border-color: white; 
+    color: white;
 }
 
 /* download-button*/
